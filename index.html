@@ -1,0 +1,1360 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHANYRAQ USA - Официальное Открытие | 3 Мая 2026, Нью-Йорк</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      /* --- CORE STYLES --- */
+      /* --- CORE THEME STYLES (Match reference site and logo) --- */
+      :root {
+        /* These gold and dark tones are pulled from your logo and reference photo */
+        --shanyraq-gold: #c69c6d;
+        --shanyraq-light-gold: #e5cc9f;
+        --dark-gold: #b28a58;
+        --font-sans:
+          "Montserrat", sans-serif; /* Modern, clean (Reference site) */
+        --transition: all 0.3s ease-in-out;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        margin: 0;
+        padding: 0;
+        color: white;
+        line-height: 1.6;
+      }
+
+      /* --- STICKY NAV BAR (High-end interaction) --- */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4rem;
+        box-sizing: border-box;
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      /* Logo Area - Centered and Premium */
+      .logo-area {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+      }
+
+      .shanyraq-logo-img {
+        height: 60px; /* Adjust height as needed */
+        width: auto;
+      }
+
+      .shanyraq-text-stack {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+
+      .main-shanyraq-title {
+        font-family: var(--font-sans);
+        font-size: 1.6rem;
+        font-weight: 300;
+        letter-spacing: 0.3em;
+        color: var(--shanyraq-light-gold);
+        text-transform: uppercase;
+      }
+
+      /* Header Navigation - Premium links */
+      .header-nav {
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      .header-nav a {
+        font-family: var(--font-sans);
+        color: #ddd;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        transition: var(--transition);
+        border-bottom: 1px solid transparent;
+        padding-bottom: 3px;
+      }
+
+      .header-nav a:hover {
+        color: white;
+        border-bottom: 1px solid var(--shanyraq-gold);
+      }
+
+      /* Premium C.T.A. Button (Call to Action) */
+      .cta-tickets {
+        font-family: var(--font-sans);
+        background: var(--shanyraq-gold);
+        color: white;
+        padding: 12px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        transition: var(--transition);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .cta-tickets i {
+        font-size: 1.2rem;
+      }
+
+      .cta-tickets:hover {
+        background: var(--dark-gold);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      /* --- HERO SECTION --- */
+      #hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Align content lower like reference */
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+        /* Background pulled from reference photo (the high-end yacht photo) */
+        background-image:
+          linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.8) 100%
+          ),
+          url("https://horizonedgeny.com/wp-content/uploads/2021/08/horizon-edge-hero.jpg"); /* Use a high-res version of the yacht/skyline image */
+        background-size: cover;
+        background-position: center top;
+        background-attachment: fixed; /* Parallax feel from ref. site */
+        padding-bottom: 10rem;
+      }
+
+      /* Text Styles - Premium Gold Gradients and Shadows */
+      #hero h1 {
+        font-family: var(--font-serif);
+        font-size: 4.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.5rem;
+        background-image: linear-gradient(
+          to bottom right,
+          var(--dark-gold),
+          var(--shanyraq-light-gold)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
+      }
+
+      #hero h2 {
+        font-family: var(--font-serif);
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-bottom: 4rem;
+        /* Gold gradient for subheading */
+        background-image: linear-gradient(
+          to bottom right,
+          var(--shanyraq-light-gold),
+          var(--dark-gold)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Detail Cards - Replicating the 'Glassmorphism' look from the reference photo */
+      .hero-details {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 900px;
+      }
+
+      .detail-card {
+        background: rgba(255, 255, 255, 0.07); /* Semi-transparent white */
+        backdrop-filter: blur(10px); /* Glass blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        padding: 1.5rem 2.5rem;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 250px;
+      }
+
+      .detail-card i {
+        font-size: 2.2rem;
+        color: var(--shanyraq-light-gold);
+      }
+
+      .detail-card span {
+        font-family: var(--font-serif);
+        font-size: 1.6rem;
+        color: white;
+        font-weight: bold;
+      }
+
+      .detail-card p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      /* Responsive Design (Mobile) */
+      @media (max-width: 1024px) {
+        header {
+          padding: 0 2rem;
+          height: 70px;
+        }
+        .shanyraq-logo-img {
+          height: 45px;
+        }
+        .main-shanyraq-title {
+          font-size: 1.2rem;
+        }
+        .header-nav {
+          gap: 1rem;
+          font-size: 0.75rem;
+        }
+        #hero h1 {
+          font-size: 3rem;
+        }
+        #hero h2 {
+          font-size: 1.8rem;
+        }
+        .detail-card {
+          width: 100%;
+          max-width: 250px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .header-nav {
+          display: none;
+        } /* Mobile Menu implementation would go here */
+        #hero h1 {
+          font-size: 2.5rem;
+        }
+        #hero h2 {
+          font-size: 1.5rem;
+        }
+        .hero-details {
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+      body {
+        font-family: var(--font-sans);
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-off-white);
+        color: var(--deep-dark);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Standardized Text Styles */
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: var(--font-serif);
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.05em;
+      }
+
+      h1,
+      h2,
+      h3 {
+        background-image: linear-gradient(
+          to bottom right,
+          var(--dark-gold),
+          var(--shanyraq-gold)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Gold Line Separator */
+      .gold-line {
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          var(--shanyraq-gold) 50%,
+          transparent 100%
+        );
+        width: 80px;
+        margin: 1.5rem auto;
+      }
+
+      /* Container for content width */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      /* --- PRE-LOADER (Optional) --- */
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 10000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:
+          opacity 1s ease,
+          visibility 1s;
+      }
+
+      .loader {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid var(--shanyraq-gold);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Hide body until loaded, showing only loader */
+      .loaded #preloader {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      /* --- STICKY CALL-TO-ACTION (Floating Ticket button) --- */
+      .sticky-ticket-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        background: var(--shanyraq-gold);
+        color: white;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+      }
+
+      .sticky-ticket-btn:hover {
+        background: var(--dark-gold);
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      /* --- HERO VIDEO STYLES --- */
+      /* Update the Hero container to allow absolute positioning of the top text */
+      #hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Changed from flex-end to center for better balance */
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        background: #000;
+      }
+
+      /* Fix the Top Text visibility and layering */
+      .hero-top-text {
+        font-family: var(--font-sans);
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        color: var(--shanyraq-light-gold);
+        position: absolute; /* Keep absolute */
+        top: 40px; /* Adjusted from 6rem to be higher up like the photo */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10; /* Increased Z-Index to ensure it stays on top */
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Added shadow for readability */
+      }
+      #hero-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        transform: translateX(-50%) translateY(-50%);
+        object-fit: cover;
+      }
+
+      .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.4
+        ); /* Darkens the video so gold text pops */
+        z-index: 1;
+      }
+
+      /* Ensure all content sits ABOVE the video and overlay */
+      #hero .container,
+      #hero .hero-top-text {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-top-text {
+        font-family: var(--font-sans);
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        color: var(--shanyraq-light-gold);
+        margin-bottom: 1.5rem;
+        position: absolute;
+        top: 6rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      #hero h1 {
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.5rem;
+        background-image: linear-gradient(
+          to bottom right,
+          white,
+          var(--shanyraq-light-gold)
+        ); /* Bright gold hero text */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      #hero h2 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-bottom: 4rem;
+        background-image: linear-gradient(
+          to bottom right,
+          var(--shanyraq-light-gold),
+          white
+        ); /* Gold fade subtext */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Detail Cards in Hero */
+      .hero-details {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 900px;
+      }
+
+      .detail-card {
+        background: rgba(255, 255, 255, 0.1); /* Frosted effect */
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        padding: 1.5rem 2.5rem;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 250px;
+      }
+
+      .detail-card i {
+        font-size: 2rem;
+        color: var(--shanyraq-light-gold);
+      }
+
+      .detail-card span {
+        font-family: var(--font-serif);
+        font-size: 1.6rem;
+        color: white;
+        font-weight: bold;
+      }
+
+      .detail-card p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      /* --- DETAILS SECTION --- */
+      #details {
+        padding: 8rem 0;
+        background-color: var(--light-grey);
+        text-align: center;
+      }
+
+      #details h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      .program-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .program-card {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+        transition: var(--transition);
+        border: 2px solid transparent;
+      }
+
+      .program-card:hover {
+        transform: translateY(-10px);
+        border-color: var(--shanyraq-gold);
+        box-shadow: 0 25px 60px rgba(198, 156, 109, 0.1);
+      }
+
+      .program-card i {
+        font-size: 3rem;
+        color: var(--shanyraq-gold);
+        margin-bottom: 1.5rem;
+      }
+
+      .program-card h4 {
+        font-size: 1.5rem;
+        color: var(--deep-dark);
+        -webkit-text-fill-color: initial;
+        background: none;
+        margin-bottom: 1rem;
+      }
+
+      .program-card p {
+        font-size: 1rem;
+        margin: 0;
+        color: #777;
+      }
+
+      /* --- STATS SECTION --- */
+      #stats {
+        padding: 6rem 0;
+        background: white;
+        text-align: center;
+      }
+
+      #stats h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+      #stats span.shanyraq-blue-text {
+        /* -webkit-text-fill-color: var(--shanyraq-blue); */
+      }
+
+      .stats-grid {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .stat-circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid #eaeaea;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+        transition: var(--transition);
+      }
+
+      .stat-circle:hover {
+        border-color: var(--shanyraq-gold);
+        transform: scale(1.05);
+      }
+
+      .stat-number {
+        font-family: var(--font-serif);
+        font-size: 4rem;
+        font-weight: 700;
+        color: var(--deep-dark);
+        margin-top: -10px;
+      }
+
+      .stat-circle.vip .stat-number {
+        color: var(--shanyraq-gold);
+        background-image: linear-gradient(
+          to bottom right,
+          var(--dark-gold),
+          var(--shanyraq-gold)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .stat-text {
+        font-size: 1rem;
+        color: #777;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+      }
+
+      /* --- QUOTE SECTION --- */
+      #quote {
+        padding: 8rem 0;
+        background-color: var(--shanyraq-blue);
+        color: white;
+        text-align: center;
+        position: relative;
+      }
+
+      #quote::before {
+        content: "\201C"; /* Open Quote */
+        position: absolute;
+        top: 2rem;
+        left: 10%;
+        font-size: 12rem;
+        color: rgba(255, 255, 255, 0.1);
+        font-family: var(--font-serif);
+      }
+
+      #quote::after {
+        content: "\201D"; /* Close Quote */
+        position: absolute;
+        bottom: 2rem;
+        right: 10%;
+        font-size: 12rem;
+        color: rgba(255, 255, 255, 0.1);
+        font-family: var(--font-serif);
+      }
+
+      #quote .quote-container {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      #quote h3 {
+        font-size: 2.2rem;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      #quote h3 .shanyraq-blue-text {
+        -webkit-text-fill-color: var(--shanyraq-light-gold);
+      }
+
+      /* --- BOOKING SECTION (MAIN SALE AREA) --- */
+      #booking {
+        padding: 8rem 0;
+        background: white;
+        text-align: center;
+      }
+
+      #booking h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      .booking-row {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+      }
+
+      /* Contact/Methods Side */
+      .methods-side {
+        flex: 1;
+        min-width: 300px;
+        text-align: left;
+        padding: 0 2rem;
+      }
+
+      .methods-side h4 {
+        font-size: 1.8rem;
+        color: #333;
+        margin-bottom: 1.5rem;
+        -webkit-text-fill-color: initial;
+        background: none;
+      }
+
+      .method-block {
+        background: #f9f9f9;
+        padding: 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        border-left: 5px solid var(--shanyraq-gold);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .method-block i {
+        font-size: 2rem;
+        color: var(--shanyraq-gold);
+      }
+      .method-block div h5 {
+        margin: 0;
+        font-size: 1rem;
+        color: #888;
+        text-transform: uppercase;
+        font-family: var(--font-sans);
+      }
+      .method-block div span {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: var(--deep-dark);
+        font-family: var(--font-serif);
+      }
+      .method-block div a {
+        color: var(--shanyraq-blue);
+        text-decoration: none;
+        font-family: var(--font-sans);
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      /* Ticket Price Side */
+      .tickets-side {
+        flex: 1;
+        min-width: 300px;
+        padding: 0 2rem;
+      }
+
+      .ticket-item {
+        background: #fff8ee;
+        border: 2px dashed #ead4bd;
+        border-radius: 15px;
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        transition: var(--transition);
+      }
+
+      .ticket-item:hover {
+        border-color: var(--shanyraq-gold);
+        background: white;
+        box-shadow: 0 15px 40px rgba(198, 156, 109, 0.1);
+      }
+
+      .ticket-item.vip {
+        border: 3px solid var(--shanyraq-gold);
+        background: white;
+        box-shadow: 0 10px 30px rgba(198, 156, 109, 0.2);
+        position: relative;
+      }
+
+      .ticket-item.vip::after {
+        content: "Премиум";
+        position: absolute;
+        top: -15px;
+        right: 20px;
+        background: var(--shanyraq-gold);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .ticket-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .ticket-header h4 {
+        font-size: 1.6rem;
+        color: #333;
+        -webkit-text-fill-color: initial;
+        background: none;
+        margin: 0;
+      }
+      .ticket-price {
+        font-family: var(--font-serif);
+        font-size: 2.5rem;
+        color: var(--shanyraq-gold);
+        font-weight: bold;
+      }
+      .ticket-item p {
+        margin: 0;
+        font-size: 1rem;
+        color: #666;
+        font-style: italic;
+      }
+
+      /* Call to Action Button */
+      .book-now-btn {
+        display: inline-block;
+        background: var(--shanyraq-gold);
+        color: white;
+        padding: 1rem 3rem;
+        border-radius: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        transition: var(--transition);
+        margin-top: 3rem;
+        font-family: var(--font-sans);
+        cursor: pointer;
+        border: none;
+      }
+
+      .book-now-btn:hover {
+        background: var(--dark-gold);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      /* --- FOOTER --- */
+      footer {
+        padding: 6rem 0;
+        background: var(--bg-off-white);
+        text-align: center;
+        border-top: 1px solid #eaeaea;
+      }
+
+      footer h3 {
+        font-size: 2.2rem;
+        color: #444;
+        -webkit-text-fill-color: initial;
+        background: none;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 2rem;
+      }
+
+      .footer-benefits {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .footer-benefit-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        transition: var(--transition);
+        border: 1px solid #f1f1f1;
+      }
+
+      .footer-benefit-card:hover {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      }
+      .footer-benefit-card i {
+        font-size: 2rem;
+        color: var(--shanyraq-gold);
+      }
+      .footer-benefit-card p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #888;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-family: var(--font-sans);
+        line-height: 1.3;
+      }
+
+      .final-quote {
+        margin-top: 4rem;
+        font-family: var(--font-serif);
+        color: #555;
+        font-size: 1.1rem;
+      }
+
+      /* --- RESPONSIVE DESIGN (Mobile optimization) --- */
+      @media (max-width: 1024px) {
+        #hero h1 {
+          font-size: 3.5rem;
+        }
+        #hero h2 {
+          font-size: 1.8rem;
+        }
+        .hero-details {
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+        .detail-card {
+          width: 100%;
+          max-width: 250px;
+        }
+        .program-icons {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .methods-side {
+          text-align: center;
+        }
+        .method-block {
+          flex-direction: column;
+          text-align: center;
+          padding: 1rem;
+        }
+        .footer-benefits {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.8rem !important;
+        }
+        h2 {
+          font-size: 1.6rem !important;
+        }
+        .hero-top-text {
+          top: 4rem;
+          font-size: 0.9rem;
+        }
+        #hero {
+          height: auto;
+          padding: 8rem 0;
+          background-attachment: scroll;
+        }
+        .hero-details {
+          margin-top: 2rem;
+          flex-direction: column;
+          align-items: center;
+        }
+        #details {
+          padding: 4rem 0;
+        }
+        .program-icons {
+          grid-template-columns: 1fr;
+        }
+        .stats-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+        .stat-circle {
+          width: 180px;
+          height: 180px;
+        }
+        .booking-row {
+          flex-direction: column;
+        }
+        .methods-side,
+        .tickets-side {
+          width: 100%;
+          padding: 0;
+        }
+        .booking-row {
+          text-align: center;
+        }
+        .methods-side {
+          text-align: left;
+          margin-bottom: 2rem;
+        }
+        .ticket-header {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+      @media (max-width: 768px) {
+        .cta-tickets {
+          display: none;
+        }
+        header {
+          padding: 0 1.5rem;
+        }
+        .header-nav {
+          display: none;
+        } /* REQIURED: Remove links on mobile */
+        .main-shanyraq-title {
+          font-size: 1.1rem;
+        }
+        .shanyraq-logo-img {
+          height: 40px;
+        }
+
+        .program-icons {
+          grid-template-columns: 1fr;
+        }
+        .stats-grid {
+          gap: 20px;
+        }
+        .stat-circle {
+          width: 150px;
+          height: 150px;
+        }
+        .stat-number {
+          font-size: 2.2rem;
+        }
+
+        #hero h1 {
+          font-size: 2.6rem;
+        }
+        .cta-tickets {
+          padding: 8px 15px;
+          font-size: 0.7rem;
+        }
+      }
+
+      /* Preloader */
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 10000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+      }
+      .loaded #preloader {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .loader {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid var(--shanyraq-gold);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="loading">
+    <header>
+      <div class="logo-area">
+        <img
+          src="./shanyraq.png"
+          alt="SHANYRAQ USA Logo"
+          class="shanyraq-logo-img"
+        />
+        <div class="shanyraq-text-stack">
+          <div class="main-shanyraq-title">SHANYRAQ</div>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#details">Программа</a>
+        <a href="#stats">О мероприятии</a>
+        <a href="#venue">Venue</a>
+      </nav>
+
+      <a href="#booking" class="cta-tickets">
+        <i class="fas fa-ticket-alt"></i>
+        Купить билет
+      </a>
+    </header>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <a href="#booking" class="sticky-ticket-btn">
+      <i class="fas fa-ticket-alt"></i>
+      Купить билет
+    </a>
+    <section id="hero">
+      <video autoplay muted loop playsinline id="hero-video">
+        <source src="./heroVideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="video-overlay"></div>
+      <div class="container">
+        <h1>SHANYRAQ USA</h1>
+        <h2>ОФИЦИАЛЬНОЕ ОТКРЫТИЕ</h2>
+        <div class="gold-line"></div>
+
+        <div class="hero-details">
+          <div class="detail-card">
+            <i class="fas fa-calendar-alt"></i>
+            <span>3 мая 2026</span>
+            <p>ДАТА</p>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-clock"></i>
+            <span>16:00</span>
+            <p>ВРЕМЯ</p>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Horizon’s Edge</span>
+            <p>НЬЮ-ЙОРК</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details">
+      <div class="container">
+        <h2>Программа вечера</h2>
+        <div class="program-icons">
+          <div class="program-card">
+            <i class="fas fa-ship"></i>
+            <h4>Вечерний Нью-Йорк</h4>
+            <p>С воды: вид на Манхэттен</p>
+          </div>
+          <div class="program-card">
+            <i class="fas fa-music"></i>
+            <h4>DJ и Живая Музыка</h4>
+            <p>Атмосферное сопровождение</p>
+          </div>
+          <div class="program-card">
+            <i class="fas fa-microphone"></i>
+            <h4>Шоу Программа</h4>
+            <p>Развлекательные выступления</p>
+          </div>
+          <div class="program-card">
+            <i class="fas fa-camera"></i>
+            <h4>Фото, Видео</h4>
+            <p>Дрон съёмка мероприятия</p>
+          </div>
+          <div class="program-card">
+            <i class="fas fa-utensils"></i>
+            <h4>Национальные Блюда</h4>
+            <p>И элитные напитки</p>
+          </div>
+          <div class="program-card">
+            <i class="fas fa-star"></i>
+            <h4>Эксклюзив</h4>
+            <p>Только для гостей SHANYRAQ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats">
+      <div class="container">
+        <h2>На борту — <span class="shanyraq-blue-text">600 ГОСТЕЙ</span></h2>
+        <div class="gold-line"></div>
+        <div class="stats-grid">
+          <div class="stat-circle">
+            <span class="stat-number">350</span>
+            <p class="stat-text">МОЛОДЁЖИ</p>
+          </div>
+          <div class="stat-circle">
+            <span class="stat-number">200</span>
+            <p class="stat-text">ПОСТАРШЕ</p>
+          </div>
+          <div class="stat-circle vip">
+            <span class="stat-number">50</span>
+            <p class="stat-text">VIP ГОСТЕЙ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote">
+      <div class="container quote-container">
+        <h3>
+          <span class="shanyraq-blue-text" style="text: black">SHANYRAQ</span> —
+          это не про скидки,<br />это про людей, с которыми делают деньги<br />и
+          двигаются дальше
+        </h3>
+      </div>
+    </section>
+
+    <section id="booking">
+      <div class="container">
+        <h2>Бронирование Билетов</h2>
+        <p>
+          Количество мест строго ограничено. Пожалуйста, выберите метод
+          бронирования ниже.
+        </p>
+        <div class="gold-line"></div>
+
+        <div class="booking-row">
+          <div class="methods-side">
+            <h4>Как забронировать?</h4>
+
+            <div class="method-block">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h5>Телефон</h5>
+                <span>+1 929 471 9363</span>
+              </div>
+            </div>
+
+            <div class="method-block">
+              <i class="fas fa-money-bill-wave"></i>
+              <div>
+                <h5>Zelle</h5>
+                <a href="mailto:1314gulmira@gmail.com">1314gulmira@gmail.com</a>
+              </div>
+            </div>
+            <p>После оплаты мы свяжемся с вами для подтверждения брони.</p>
+          </div>
+
+          <div class="tickets-side">
+            <div class="ticket-item">
+              <div class="ticket-header">
+                <h4>Билет</h4>
+                <span class="ticket-price">200$</span>
+              </div>
+              <p>Доступ к стандартной программе</p>
+            </div>
+            <div class="ticket-item vip">
+              <div class="ticket-header">
+                <h4>VIP зона</h4>
+                <span class="ticket-price">500$</span>
+              </div>
+              <p>Особые привилегии, лучший обзор</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="tel:+19294719363" class="book-now-btn">Связаться для брони</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="">
+        <h3>SHANYRAQ: Атмосфера, Которая Вдохновляет</h3>
+
+        <div class="footer-benefits">
+          <div class="footer-benefit-card">
+            <i class="fas fa-handshake"></i>
+            <p>Атмосфера единства</p>
+          </div>
+          <div class="footer-benefit-card">
+            <i class="fas fa-diamond"></i>
+            <p>Премиальный формат</p>
+          </div>
+          <div class="footer-benefit-card">
+            <i class="fas fa-users-cog"></i>
+            <p>Нетворкинг и партнёрства</p>
+          </div>
+          <div class="footer-benefit-card">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>Количество мест ограничено</p>
+          </div>
+        </div>
+
+        <p class="final-quote">
+          Такие вечера не повторяются, а остаются в истории
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Page Preloader (shows loader until full page loads)
+      window.addEventListener("load", function () {
+        document.body.classList.remove("loading");
+        document.body.classList.add("loaded");
+      });
+
+      // Smooth Scrolling for all anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
