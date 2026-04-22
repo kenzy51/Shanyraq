@@ -1511,6 +1511,235 @@
         </p>
       </div>
     </section>
+    <div
+      id="photo-modal"
+      style="
+        display: none;
+        position: fixed;
+        z-index: 10001;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        cursor: zoom-out;
+      "
+      onclick="closeModal()"
+    >
+      <span
+        style="
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          color: #fff;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+        "
+        >&times;</span
+      >
+      <img
+        id="modal-img"
+        style="
+          max-width: 95%;
+          max-height: 95%;
+          border-radius: 5px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          object-fit: contain;
+        "
+      />
+    </div>
+
+    <section
+      id="announcements"
+      style="
+        background-color: #f9f9f9;
+        padding: 100px 20px;
+        font-family: &quot;Montserrat&quot;, sans-serif;
+      "
+    >
+      <div style="max-width: 1200px; margin: 0 auto; text-align: center">
+        <h2
+          style="
+            font-family: &quot;Playfair Display&quot;, serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #0a192f;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+          "
+        >
+          Объявления SHANYRAQ
+        </h2>
+        <div
+          style="
+            height: 2px;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              #c69c6d,
+              transparent
+            );
+            width: 100px;
+            margin: 0 auto 50px auto;
+          "
+        ></div>
+
+        <div
+          class="gallery-grid"
+          style="
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <div
+            class="gallery-item"
+            onclick="openModal('./ann1.jpeg')"
+            style="
+              flex: 1;
+              min-width: 300px;
+              max-width: 380px;
+              position: relative;
+              border-radius: 15px;
+              box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+              cursor: zoom-in;
+              background: #fff;
+            "
+          >
+            <img
+              src="./ann1.jpeg"
+              alt="Moment 1"
+              style="
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: 0.6s ease;
+                filter: grayscale(100%);
+              "
+            />
+            <div class="photo-overlay"><p>Networking</p></div>
+          </div>
+
+          <div
+            class="gallery-item"
+            onclick="openModal('./ann2.jpeg')"
+            style="
+              flex: 1;
+              min-width: 300px;
+              max-width: 380px;
+              position: relative;
+              border-radius: 15px;
+              box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+              cursor: zoom-in;
+              background: #fff;
+            "
+          >
+            <img
+              src="./ann2.jpeg"
+              alt="Moment 2"
+              style="
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: 0.6s ease;
+                filter: grayscale(100%);
+              "
+            />
+            <div class="photo-overlay"><p>Lifestyle</p></div>
+          </div>
+
+          <div
+            class="gallery-item"
+            onclick="openModal('./ann3.jpeg')"
+            style="
+              flex: 1;
+              min-width: 300px;
+              max-width: 380px;
+              position: relative;
+              border-radius: 15px;
+              box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+              cursor: zoom-in;
+              background: #fff;
+            "
+          >
+            <img
+              src="./ann3.jpeg"
+              alt="Moment 3"
+              style="
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: 0.6s ease;
+                filter: grayscale(100%);
+              "
+            />
+            <div class="photo-overlay"><p>Atmosphere</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .photo-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient(to top, rgba(10, 25, 47, 0.8), transparent);
+        opacity: 0;
+        transition: 0.4s;
+        text-align: left;
+      }
+      .photo-overlay p {
+        color: #fff;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0;
+      }
+      .gallery-item:hover .photo-overlay {
+        opacity: 1;
+      }
+      .gallery-item:hover img {
+        filter: grayscale(0%) !important;
+        transform: scale(1.02);
+      }
+
+      @media (max-width: 768px) {
+        #announcements {
+          padding: 40px 15px !important;
+        }
+        .gallery-item {
+          min-width: 100% !important;
+        }
+        .gallery-item img {
+          filter: grayscale(0%) !important;
+        }
+        .photo-overlay {
+          opacity: 1 !important;
+        }
+      }
+    </style>
+
+    <script>
+      function openModal(imgSrc) {
+        document.getElementById("modal-img").src = imgSrc;
+        document.getElementById("photo-modal").style.display = "flex";
+        document.body.style.overflow = "hidden"; // Запретить скролл при открытом фото
+      }
+
+      function closeModal() {
+        document.getElementById("photo-modal").style.display = "none";
+        document.body.style.overflow = "auto"; // Вернуть скролл
+      }
+    </script>
+    <!--  -->
     <!-- PARTNERS -->
     <section
       id="partners"
@@ -1601,7 +1830,11 @@
                 />
                 <span class="partner-name">Soul Pasta</span>
               </a>
-              <a href="https://www.instagram.com/kturndrivingschool?igsh=bnZmNzZpZngxMGdr" target="_blank" class="partner-link">
+              <a
+                href="https://www.instagram.com/kturndrivingschool?igsh=bnZmNzZpZngxMGdr"
+                target="_blank"
+                class="partner-link"
+              >
                 <img
                   src="turn.jpeg"
                   alt="Turn Driving School"
@@ -1641,7 +1874,11 @@
                 <img src="./asiamix.jpeg" alt="Asia Mix" class="partner-img" />
                 <span class="partner-name">Asia Mix</span>
               </a>
-              <a href="https://www.instagram.com/healthy_homes?igsh=MTg0MG5yMWZjZTFpdg%3D%3D" target="_blank" class="partner-link">
+              <a
+                href="https://www.instagram.com/healthy_homes?igsh=MTg0MG5yMWZjZTFpdg%3D%3D"
+                target="_blank"
+                class="partner-link"
+              >
                 <img
                   src="./healthyhome.jpeg"
                   alt="Healthy Home"
@@ -1722,7 +1959,6 @@
                 <span class="partner-name">Mama Lily</span>
               </a>
             </div>
-
           </div>
         </div>
       </div>
